@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Mar  5 13:46:27 2020
+
+@author: chakib.houd
+"""
 def compter_occurence (caractere, chaine):
     compteur = 0
     g= caractere
@@ -6,10 +13,13 @@ def compter_occurence (caractere, chaine):
             compteur += 1
     return compteur
 
+#Mettre des cellules
+
+
 """
 test pour la question 1
 """
-chaine='bonjour'
+chaine='bonjokkur'
 print(compter_occurence('k',chaine))
 
 """
@@ -34,7 +44,7 @@ def compter_mots(chaine):
 test pour la question 2
 """
 
-chaine='bonjour bonjour estelle bla'
+chaine='hola   hello bonjour  nuit'
 print(compter_mots(chaine))
 
 """
@@ -60,9 +70,9 @@ question 4
 
 def substituer():
     
-    chaine = 'salut toi '
+    chaine = 'hola senorita '
     liste = list(chaine)
-    liste[4]= 'z'
+    liste[3]= 'u'
     chaine = ''.join(liste)
     print(chaine)
 
@@ -88,3 +98,65 @@ test question 5
 """
 
 print(substituer_mot('salut','ski','salut salut toi'))
+
+
+"""
+question 7
+"""
+
+        
+def decaler2(caractere, decalage):
+    code_caractere=ord(caractere)
+    decalage_code_caractere=code_caractere + decalage
+    return chr(decalage_code_caractere)
+    
+
+"""
+test question 7
+"""
+
+print(decaler2('a',7))
+
+    
+"""
+question 8
+"""
+
+def chiffrement_cesar(chaine,clé):
+    chaine_vide=''
+    for c in chaine:
+        k = decaler2(c,clé)
+        chaine_vide+=k
+    return chaine_vide
+
+
+print(chiffrement_cesar('a  b y ',2))
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
